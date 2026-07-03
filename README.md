@@ -1,2 +1,2 @@
 # ph0sph3ne-project
-Chloe's graphic novel site
+ph0sph3ne graphic novel site
