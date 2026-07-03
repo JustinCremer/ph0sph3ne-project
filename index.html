@@ -9,35 +9,47 @@
             box-sizing: border-box;
         }
         body {
-            background-color: #05050d; /* Deep dark tone matching the upper artwork sky */
+            background-color: #05050d; /* Dark background matches the poster sky */
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             overflow-x: hidden;
         }
-        .container {
+        .story-container {
             width: 100%;
-            max-width: 900px; /* Adjust this to change how large the art appears on big screens */
-            padding: 20px;
+            max-width: 800px; /* Limits width on desktop so it reads like a comic page */
+            padding: 20px 10px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 0; /* Keeps images stacked seamlessly with no gaps */
         }
         img {
             width: 100%;
             height: auto;
             display: block;
-            border-radius: 4px; /* Subtle softening of the image corners */
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7); /* Deep shadow to separate it from the background */
+        }
+        .poster {
+            border-radius: 4px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+            margin-bottom: 30px; /* Creates a clean separation before the story begins */
+        }
+        .comic-panel {
+            /* Ready for future panels to stack smoothly underneath */
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="realm-of-man.JPG" alt="The Realm of Man">
+    <div class="story-container">
+        <!-- 1. Top Poster Image -->
+        <img src="realm-of-man.jpg" alt="The Realm of Man Title Poster" class="poster">
+        
+        <!-- 2. First Graphic Story Panel -->
+        <img src="Sample_Untitled_Artwork.jpg" alt="The Realm of Man - Panel 1" class="comic-panel">
     </div>
 
 </body>
